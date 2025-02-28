@@ -1,13 +1,10 @@
-from dotenv import load_dotenv
-from agents.social_media_agent import SocialMediaAgent
-from tools import (
-    StyleSelectorTool,
-    PlatformSelectorTool, 
-    HashtagCheckerTool,
-    URLProcessorTool
-)
+from tools.style_selector import StyleSelectorTool
+from tools.platform_selector import PlatformSelectorTool
+from tools.hashtag_checker import HashtagCheckerTool
+from tools.url_processor import URLProcessorTool  # If you have this tool
 from langchain.llms import OpenAI
-
+from agents.social_media_agent import SocialMediaAgent
+from dotenv import load_dotenv  # Add this line
 load_dotenv()
 
 def main():
