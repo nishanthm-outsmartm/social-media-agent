@@ -1,0 +1,4 @@
+Generate {platform} content about {topic} in {style} style.
+Platform Guidelines: {platform_rules}
+Content Source: {url_content}
+Hashtags: {hashtags_prompt}
